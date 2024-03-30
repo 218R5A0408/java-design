@@ -1,0 +1,26 @@
++------------------------+           +----------------------+
+|       TravelPackage    | 1 ------- *|      Destination     |
++------------------------+           +----------------------+
+| - name: String         |           | - name: String       |
+| - passengerCapacity: int|           | - activities: List   |
+| - itinerary: List      |           +----------------------+
+| - passengers: List     |           | +addActivity()       |
++------------------------+           +----------------------+
+       |                  |
+       |                  |
+       |                  |
+       |                  |
+       V                  V
++------------------------+           +----------------------+
+|        Passenger       |           |       Activity       |
++------------------------+           +----------------------+
+| - name: String         |           | - name: String       |
+| - passengerNumber: String|          | - description: String|
+| - passengerType: String|           | - cost: double       |
+| - balance: double      |           | - capacity: int      |
+| - activitiesSignedUp: List |       | - currentCapacity: int|
++------------------------+           +----------------------+
+       |                  |
+       |                  |
+       |                  |
+       V                  V
